@@ -10,7 +10,7 @@
     "export": "next build && next export && rm -rf docs && mv out docs"
   },
   "dependencies": {
-    "jacm-library": "file:../jacm-library/jacm-library-0.0.1.tgz",
+    "jacm-library": "file:jacm-library-0.0.1.tgz",
     "next": "15.0.2",
     "next-transpile-modules": "^10.0.1",
     "react": "19.0.0-rc-02c0e824-20241028",
