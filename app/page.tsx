@@ -1,10 +1,16 @@
-'use client'
-import Header from '@/components/Header/Header'
-import ThemeToggle from '@/components/ThemeToggle/ThemeToggle'
-import { redirect } from 'next/navigation';
+"use client";
+import Header from "@/components/Header/Header";
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-   redirect('/profile');
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/profile");
+  }, [router]);
+
   return (
     <>
       <Header />
@@ -13,5 +19,5 @@ export default function Home() {
         <h1>¡Bienvenido a mi perfil!</h1>
       </div>
     </>
-  )
+  );
 }

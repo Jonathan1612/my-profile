@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export && mv out docs"
+    "export": "next build && next export && rm -rf docs && mv out docs"
   },
   "dependencies": {
     "jacm-library": "file:../jacm-library/jacm-library-0.0.1.tgz",
