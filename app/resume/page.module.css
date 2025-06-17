@@ -1,0 +1,41 @@
+.containerGen {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--color-bg);
+  transition: background-color 0.3s ease;
+}
+
+.containerEnterprice {
+  width: 100%;
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.enterprise {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.containerEmp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

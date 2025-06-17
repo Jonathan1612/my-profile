@@ -1,0 +1,31 @@
+.containerGen {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-color: var(--color-bg);
+  transition: background-color 0.3s ease;
+}
+
+.formContainer,
+.socialContainer {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.formContainer {
+  color: var(--color-text);
+}
+
+.socialContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}

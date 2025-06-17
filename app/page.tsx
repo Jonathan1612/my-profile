@@ -1,11 +1,17 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import {Button} from 'jacm-library/src'
+'use client'
+import Header from '@/components/Header/Header'
+import ThemeToggle from '@/components/ThemeToggle/ThemeToggle'
+import { redirect } from 'next/navigation';
 
 export default function Home() {
+   redirect('/profile');
   return (
-    <div>
-      <h1>Hola</h1>
-    </div>
-  );
+    <>
+      <Header />
+      <ThemeToggle />
+      <div style={{ padding: "1rem" }}>
+        <h1>¡Bienvenido a mi perfil!</h1>
+      </div>
+    </>
+  )
 }
